@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 
             try {
                 BufferedReader fileDaLeggere = new BufferedReader(new InputStreamReader(c.openFileInput(nomeFile)));
-                //restituisce oggetto di tipo FileInputStream = orientato a byte (solo byte)
+                //restituisce oggetto di tipo FileInputStream = orientato a byte 
                 String testoDaRestituire;
                 //inputStream trasforma da byte a caratteri, bufferedReader trasformiamo i caratteri in una riga dove si può leggere
 
@@ -48,9 +48,9 @@ import java.io.InputStreamReader;
                 fileO.write(testoDaScrivere.getBytes());
                 //chiusura del file
                 fileO.close();
-                //mess. da restituire alla mainactivity
+               
                 esito= "file scritto correttamente";
-                //
+                
             } catch (FileNotFoundException e) {
                 esito = "non sono riuscito a trovare il file";
             } catch (IOException e) {
